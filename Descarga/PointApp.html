@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NicAppStore</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../Estilos/style2.css">
+<body class="min-h-screen flex flex-col items-center justify-center text-white p-4">
+
+    <!-- Contenedor Principal Centrado y Responsivo -->
+    <div class="w-full max-w-4xl bg-gray-800 rounded-2xl shadow-2xl p-6 md:p-10">
+        
+        <!-- HEADER / LOGO -->
+        <header class="text-center mb-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-green-400 tracking-tight">
+                NicApp<span class="text-white">Store</span>
+            </h1>
+            <p class="text-gray-400 mt-2 text-lg">Tu fuente de aplicaciones esenciales.</p>
+        </header>
+
+        <!-- SECCIÓN DE APLICACIÓN DESTACADA -->
+        <section class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 border-t border-gray-700 pt-8">
+            
+            <!-- Icono de la Aplicación -->
+            <div class="flex-shrink-0">
+                <img 
+                        src="../Recurso/PointApp.png" 
+                        alt="Icono de PointApp" 
+                        class="w-24 h-24 md:w-32 md:h-32 rounded-3xl bg-indigo-600 p-4 shadow-xl">
+            </div>
+
+            <!-- Información y Botón de Descarga -->
+            <div class="flex-grow text-center md:text-left">
+                <h2 class="text-3xl font-bold mb-2 text-white">PointApp</h2>
+                <p class="text-gray-400 mb-4 text-sm">
+                    La aplicación esencial para la gestión y participación en el control de ciclos y rifas. Verifica tu estado, fechas de participación y ciclos activos.
+                </p>
+
+                <!-- Calificación (Opcional) -->
+                <div class="flex justify-center md:justify-start items-center space-x-1 mb-6">
+                    <!-- Iconos de estrellas Lucide - Usando SVG inline ya que no estamos en React -->
+                    <span class="text-yellow-400 text-lg">★</span>
+                    <span class="text-yellow-400 text-lg">★</span>
+                    <span class="text-yellow-400 text-lg">★</span>
+                    <span class="text-yellow-400 text-lg">★</span>
+                    <span class="text-gray-500 text-lg">★</span>
+                    <span class="text-gray-400 text-sm ml-2">(4.1 / 5.0)</span>
+                </div>
+
+                <!-- Botón de Descarga Principal -->
+                <a href="https://drive.google.com/file/d/1LIQR_Hy829Flg1xTZGHf1i-XTour-4hZ/view?usp=sharing" class="download-button inline-block w-full text-sm font-semibold text-gray-900 bg-green-400 rounded-lg py-2 text-center hover:bg-green-300 transition duration-300">
+                    Descargar (APK)
+                </a>
+                <p class="text-xs text-gray-500 mt-2">Versión 1.0.2 • Requiere Android 8.0+</p>
+            </div>
+        </section>
+
+        <!-- DESCRIPCIÓN DETALLADA DE LA APP (adaptada a la nueva información) -->
+        <section class="mt-12 border-t border-gray-700 pt-8">
+            <h3 class="text-2xl font-semibold mb-6 text-green-400">Sistema de Recompensas PointApp: Niveles de Usuario</h3>
+            
+            <p class="text-gray-300 mb-8">
+                Esta aplicación te permite ver y gestionar tu puntaje acumulado por la compra de diamantes para Free Fire. Dependiendo de tu nivel de usuario, accedes a diferentes beneficios y recompensas, clasificados en Común, VIP y Platino.
+            </p>
+
+            <div class="space-y-8">
+                
+                <!-- NIVEL COMÚN -->
+                <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+                    <h4 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="w-3 h-3 bg-gray-400 rounded-full mr-3"></span> Nivel Común
+                    </h4>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 ml-4">
+                        <li>**Acumulación:** 25 puntos canjeables.</li>
+                        <li>**Recompensa:** Recarga de 110 diamantes totalmente gratis al canjear los puntos.</li>
+                    </ul>
+                </div>
+
+                <!-- NIVEL VIP -->
+                <div class="bg-gray-700 p-4 rounded-lg shadow-lg border-l-4 border-yellow-500">
+                    <h4 class="text-xl font-bold text-yellow-400 mb-2 flex items-center">
+                        <span class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></span> Nivel VIP
+                    </h4>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 ml-4">
+                        <li>**Acumulación:** 15 puntos canjeables.</li>
+                        <li>**Recompensa Principal:** Canje por 110 diamantes.</li>
+                        <li>**Beneficio Adicional:** Participación mensual en la rifa de otros 110 diamantes totalmente gratis.</li>
+                    </ul>
+                </div>
+                
+                <!-- NIVEL PLATINO -->
+                <div class="bg-gray-700 p-4 rounded-lg shadow-lg border-l-4 border-indigo-500">
+                    <h4 class="text-xl font-bold text-indigo-400 mb-2 flex items-center">
+                        <span class="w-3 h-3 bg-indigo-400 rounded-full mr-3"></span> Nivel Platino
+                    </h4>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 ml-4">
+                        <li>**Acumulación:** 12 puntos canjeables.</li>
+                        <li>**Recompensa Principal:** Canje por 110 diamantes.</li>
+                        <li>**Beneficio Adicional:** Participación en la rifa mensual.</li>
+                        <li>**Exclusivo:** Acceso a juegos interactivos con premios de diamantes o efectivo.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="text-center mt-12 pt-6 border-t border-gray-700 text-gray-500 text-sm">
+            <p>&copy; 2025 NicAppStore. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

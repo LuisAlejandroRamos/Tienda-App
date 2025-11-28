@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d1117; /* Fondo muy oscuro, tipo GitHub/App Store */
+}
+.download-button {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4); /* Sombra verde */
+}
+.download-button:hover {
+    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.6);
+    transform: translateY(-2px);
+}

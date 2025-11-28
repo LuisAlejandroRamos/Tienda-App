@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NicAppStore</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Estilos/style.css">
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center text-white p-4">
+
+    <!-- Contenedor Principal Centrado y Responsivo --><div class="w-full max-w-4xl bg-gray-800 rounded-2xl shadow-2xl p-6 md:p-10">
+        
+        <!-- HEADER / LOGO --><header class="text-center mb-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-green-400 tracking-tight">
+                NicApp<span class="text-white">Store</span>
+            </h1>
+            <p class="text-gray-400 mt-2 text-lg">Tu fuente de aplicaciones esenciales.</p>
+        </header>
+
+        <!-- SECCIÓN DE GRID DE APLICACIONES --><section class="mt-10 pt-4">
+            <h3 class="text-2xl font-semibold mb-6 text-white border-b border-gray-700 pb-3">Aplicaciones Disponibles</h3>
+            
+            <!-- CONTENEDOR DE LA GRID: Se adapta para 1, 2 o 3 columnas --><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- TARJETA DE LA APLICACIÓN 1: PointApp (con tu imagen) --><div class="app-card bg-gray-700 p-4 rounded-xl shadow-lg flex flex-col justify-between">
+                    <div class="flex items-center space-x-4 mb-4">
+                        
+                        <!-- Icono de la Aplicación: IMAGEN DEL USUARIO -->
+                         <div class="flex-shrink-0">
+                            <img 
+                                src="Recurso/PointApp.png" 
+                                alt="Icono de PointApp" 
+                                class="w-12 h-12 rounded-xl shadow-md object-cover">
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-bold text-white leading-tight">PointApp</h2>
+                            <p class="text-xs text-gray-400">Estado de usuario</p>
+                        </div>
+                    </div>
+
+                    <!-- Botón de Descarga --><div class="mt-auto">
+                         <div class="flex items-center space-x-1 mb-3">
+                            <!-- Calificación simplificada --><span class="text-yellow-400 text-sm">★★★★☆</span>
+                            <span class="text-gray-400 text-xs ml-1">(4.1)</span>
+                        </div>
+                        <a href="Descarga/PointApp.html" class="download-button inline-block w-full text-sm font-semibold text-gray-900 bg-green-400 rounded-lg py-2 text-center hover:bg-green-300 transition duration-300">
+                            Ver aplicacion
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ESPACIO VACÍO 1 (Para futuras aplicaciones) --><div class="app-card bg-gray-700/50 p-4 rounded-xl shadow-inner flex items-center justify-center border-2 border-dashed border-gray-600/50 hidden md:flex">
+                    <p class="text-gray-500 font-semibold text-center">Espacio para Nueva App</p>
+                </div>
+                
+                <!-- ESPACIO VACÍO 2 (Para futuras aplicaciones) --><div class="app-card bg-gray-700/50 p-4 rounded-xl shadow-inner items-center justify-center border-2 border-dashed border-gray-600/50 hidden lg:flex">
+                    <p class="text-gray-500 font-semibold text-center">Espacio para Nueva App</p>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <!-- FOOTER --><footer class="text-center mt-12 pt-6 border-t border-gray-700 text-gray-500 text-sm">
+            <p>&copy; 2025 NicAppStore. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
